@@ -29,7 +29,7 @@ Using **Riemannian Optimisation on the Stiefel Manifold**, NeuralVerb learns sta
 
 <div align="center">
   <br> 
-  <img src="https://github.com/user-attachments/assets/594adf47-ad6a-4132-a103-da4b59b8350b" width="500" alt="NeuralVerb Architecture">
+  <img src="https://github.com/user-attachments/assets/594adf47-ad6a-4132-a103-da4b59b8350b" width="550" alt="NeuralVerb Architecture">
   <br>
   <sub><b>Figure 1:</b> Overview of the Architecture</sub>
   <br><br>
