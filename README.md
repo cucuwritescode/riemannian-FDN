@@ -13,7 +13,7 @@
   <br><br>
 
   <h1>
-    NeuralVerb
+    RieVerb
     <br>
     <sub>Differentiable Riemannian Pruning for Unitary Feedback Delay Networks
     <div align="center">
