@@ -23,7 +23,7 @@
   
 </div>
 
-**NeuralVerb** is a differentiable real-time reverb engine that turns high-fidelity Room Impulse Responses (RIRs) into flexible, parametric, and real-time Feedback Delay Networks (FDNs).
+**RieVerb** is a differentiable real-time reverb engine that turns high-fidelity Room Impulse Responses (RIRs) into flexible, parametric, and real-time Feedback Delay Networks (FDNs).
 
 Using **Riemannian Optimisation on the Stiefel Manifold**, NeuralVerb learns stable, unitary feedback matrices that match the energy decay of real rooms, while using **Structured Pruning** to guarantee results that run efficiently on consumer CPUs.
 
