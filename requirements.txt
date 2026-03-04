@@ -1,0 +1,16 @@
+#core scientific computing
+numpy
+scipy
+matplotlib
+
+# Riemannian optimisation
+pymanopt
+
+#interactive research
+jupyter
+
+#audio I/O
+soundfile
+
+# FDN framework (requires Python >= 3.10, pulls PyTorch)
+flamo
