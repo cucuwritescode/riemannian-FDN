@@ -32,3 +32,14 @@ dist/
 *.out
 *.toc
 literature/Thesis Roadmap Pruning FDNs for Speed.pdf
+writeup/initialrep/init.fdb_latexmk
+writeup/initialrep/init.fdb_latexmk
+writeup/initialrep/init.fls
+writeup/initialrep/init.fls
+writeup/initialrep/init3.tex
+writeup/initialrep/PlotNeuralNet/
+writeup/initialrep/init3.pdf
+writeup/initialrep/init2.tex
+writeup/initialrep/init2.pdf
+writeup/initialrep/init.tex
+writeup/initialrep/init.synctex.gz

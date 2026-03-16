@@ -39,6 +39,15 @@
 
 % --- ABSTRACT ---
 \begin{abstract}
+This thesis proposes a novel, generalisable mathematical and computational method to prune 
+feedback delay networks for optimal real-time running (?). The method serves applications
+such as;
+\item Creating the "fastest white noise generator", that is; pruning an arbitrary 
+higher order feedback delay network such as $N=1024$ or $N=4096$.
+\item Towards real-time differentiable reverbs. Applications such as being able to create a
+real-time viable FDN mimic of a RIR via the combination
+of differentiable digital signal processing techniques and the proposed pruning method.
+ 
 
 \end{abstract}
 
@@ -46,16 +55,29 @@
 
 % --- MAIN CONTENT ---
 \section{Introduction}
-The pursuit of artificial reverberation has historically been constrained by a 
-fundamental dichotomy between acoustic fidelity and computational efficiency,
-a dynamic well-defined within the digital signal processing (DSP) domain as 
-the quality-efficiency gap. On one end of the continuum, convolution with measured
-Room Impulse Responses (RIRs) provides an authentic acoustic fingerprint of a physical space.
-Howver, the mathematical necessity of processing extensive arrays of samples results in a
-complexity that scales at $O(L \log L)$, where $L$ is the length of the impulse response (IR).
-This incurs significant memory bandwidth and latency penalties, rendering convolution unsustainable
-for high-density, real-time spatial audio rendering on consumer-grade central processing units
-(CPUs).
+Artificial reverberation has long been shaped by a 
+fundamental trade-off between acoustic realism and computational efficiency,
+often described in digital signal processing (DSP) as the quality-efficiency
+gap.
+At one end of this continuum, convolution with measured
+Room Impulse Responses (RIRs) provides a highly faithful representation of a physical space.
+However, the need to process long sample sequences results in a
+complexity that scales as $O(L \log L)$, where $L$ denotes the impulse-response length.
+This incurs significant memory bandwidth and latency penalties, making convolution 
+computationally prohibitive for multiple concurrent instances under low-latency real-time 
+constraints on consumer-grade central processing units (CPUs).
+
+By contrast, algorithmic reverberators, most notably Feedback Delay Networks (FDNs),
+offer computationally efficient recursive structures whose per-sample cost scales
+approximately linearly with the number of delay lines, $N$.
+Yet traditional low-order FDNs, typically based on $4 \times 4$ or $8 \times 8$
+feedback matrices, often exhibit insufficient modal density.
+The resulting sparsity of resonant modes gives rise to metallic coloration and audible
+ringing artefacts, since the auditory system can resolve individual resonances that do not
+blend into a diffuse statistical sound field.
+
+
+
 
 
 
