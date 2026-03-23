@@ -1,0 +1,6 @@
+[submodule "third_party/flamo"]
+	path = third_party/flamo
+	url = https://github.com/gdalsanto/flamo.git
+[submodule "third_party/pymanopt"]
+	path = third_party/pymanopt
+	url = https://github.com/pymanopt/pymanopt.git
